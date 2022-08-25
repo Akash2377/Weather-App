@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wether App</title>
+    <script
+      src="https://kit.fontawesome.com/584aebd994.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style/index.css" />
+  </head>
+  <body>
+    <!-- nav bar -->
+    <nav>
+      <div>
+        <img src="https://ssl.gstatic.com/onebox/weather/64/rain.png" alt="" />
+      </div>
+      <div id="search-box">
+        <div>Search City</div>
+        <input type="text" placeholder="Enter City" id="CityName" />
+        <div onclick=" getData()">submit</div>
+      </div>
+      <div>
+        <i class="fa-solid fa-gear"></i>
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-user"></i>
+      </div>
+    </nav>
+    <!-- nav bar end -->
+    <section class="contnetNews">
+      <div id="showCityW">
+        <div id="DataOfCityW"></div>
+        <div id="MapOfCity"></div>
+      </div>
+    </section>
+    <section class="contnetNews2">
+      <div id="EightDay"></div>
+    </section>
+  </body>
+</html>
+<script src="./script/index.js"></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+  integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
